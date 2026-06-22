@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ways to Donate to the Underprivileged</title>
+    <style>
+      :root {
+        --page-width: 1120px;
+        --text: #111111;
+        --muted: #9a9a9a;
+        --nkf-red: #df232c;
+        --rare-purple: #8f2878;
+        --surface: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        background: var(--surface);
+        color: var(--text);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+      }
+
+      main {
+        max-width: calc(var(--page-width) + 48px);
+        margin: 0 auto;
+        padding: 28px 24px 56px;
+      }
+
+      .title {
+        margin: 34px 0 68px;
+        text-align: center;
+        font-size: clamp(2rem, 4vw, 3.6rem);
+        font-weight: 400;
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+      }
+
+      .section {
+        display: grid;
+        grid-template-columns: minmax(260px, 0.95fr) minmax(320px, 1.05fr);
+        gap: 44px 60px;
+        align-items: center;
+        margin: 0 auto 90px;
+        max-width: var(--page-width);
+      }
+
+      .rare-section {
+        row-gap: 48px;
+      }
+
+      .rare-brand-row {
+        grid-column: 1 / -1;
+        min-height: 260px;
+      }
+
+      .section-visual {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 340px;
+      }
+
+      .qr {
+        width: min(100%, 350px);
+        height: auto;
+        display: block;
+        object-fit: contain;
+      }
+
+      .nkf-mark {
+        display: inline-block;
+        font-size: clamp(4.8rem, 11vw, 9rem);
+        font-weight: 900;
+        line-height: 0.9;
+        letter-spacing: -0.08em;
+        color: var(--nkf-red);
+        transform: skewX(-10deg);
+        margin-bottom: 10px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+
+      .rare-brand {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+
+      .rare-emblem {
+        width: 230px;
+        max-width: 100%;
+        aspect-ratio: 1 / 1;
+        display: block;
+      }
+
+      .rare-section .section-visual:not(.rare-brand-row) {
+        min-height: 300px;
+      }
+
+      .rare-wordmark {
+        text-align: center;
+        color: var(--rare-purple);
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+
+      .rare-wordmark .name {
+        display: block;
+        font-size: clamp(3rem, 5.5vw, 5.5rem);
+        line-height: 0.9;
+      }
+
+      .rare-wordmark .subname {
+        display: block;
+        margin-top: 8px;
+        font-size: clamp(1.25rem, 2.4vw, 2rem);
+        line-height: 1.05;
+      }
+
+      .rare-wordmark .location {
+        display: block;
+        margin-top: 6px;
+        font-size: clamp(1.05rem, 1.9vw, 1.6rem);
+        font-weight: 500;
+      }
+
+      .section-copy {
+        font-size: clamp(1rem, 1.45vw, 1.72rem);
+        line-height: 1.22;
+      }
+
+      .section-copy h2 {
+        margin: 0 0 8px;
+        font-size: inherit;
+        font-weight: 400;
+        line-height: 1.18;
+      }
+
+      .section-copy .lead {
+        font-size: 1em;
+        color: var(--text);
+      }
+
+      .section-copy p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .section-copy p + p {
+        margin-top: 12px;
+      }
+
+      .divider {
+        height: 1px;
+        background: transparent;
+        margin: 0 auto 58px;
+        max-width: var(--page-width);
+      }
+
+      .fineprint {
+        color: var(--muted);
+      }
+
+      .nkf-copy .lead {
+        max-width: 620px;
+      }
+
+      .rare-copy .lead {
+        max-width: 700px;
+      }
+
+      @media (max-width: 900px) {
+        main {
+          padding-inline: 18px;
+        }
+
+        .title {
+          margin-bottom: 42px;
+        }
+
+        .section {
+          grid-template-columns: 1fr;
+          gap: 18px;
+          margin-bottom: 68px;
+        }
+
+        .rare-section {
+          row-gap: 22px;
+        }
+
+        .section-visual {
+          min-height: auto;
+        }
+
+        .nkf-mark {
+          transform: none;
+        }
+
+        .rare-brand {
+          gap: 12px;
+        }
+
+        .rare-emblem {
+          width: 170px;
+        }
+
+        .rare-brand-row {
+          min-height: auto;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .title {
+          font-size: 1.85rem;
+        }
+
+        .section-copy {
+          font-size: 1rem;
+        }
+
+        .nkf-mark {
+          font-size: 5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Ways to Donate to the Underprivileged</h1>
+
+      <section class="section nkf-section" aria-labelledby="nkf-heading">
+        <div class="section-visual">
+          <img class="qr" src="NKF_paynow_QR.png" alt="PayNow QR code for the National Kidney Foundation" />
+        </div>
+        <div class="section-copy nkf-copy">
+          <div class="nkf-mark" aria-hidden="true">NKF</div>
+          <h2 id="nkf-heading" class="lead">Beneficiary Name: THE NATIONAL KIDNEY FOUNDATION A/C 1</h2>
+          <p>
+            Bank Name: DBS Bank Ltd, Toa Payoh Branch<br />
+            Bank Code: 7171 | Branch Code: 024 | Auto Save<br />
+            Bank A/c No: 024-008491-4 | Swift code: DBSSGSG.
+          </p>
+          <p class="fineprint">
+            If you wish to receive tax-deduction of 2.5 times your donation amount, please send your name,
+            NRIC/FIN/UEN, contact number, reference number and mailing address (optional) to
+            lifedrops@nkfs.org within 3 working days.
+          </p>
+        </div>
+      </section>
+
+      <section class="section rare-section" aria-labelledby="rare-heading">
+        <div class="section-visual rare-brand-row">
+          <div class="rare-brand" aria-hidden="true">
+            <svg class="rare-emblem" viewBox="0 0 240 240" role="img" aria-label="">
+              <defs>
+                <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="2" stdDeviation="1.2" flood-color="#b14c9b" flood-opacity="0.2" />
+                </filter>
+              </defs>
+              <g filter="url(#soft-shadow)">
+                <circle cx="120" cy="68" r="22" fill="#ffcc33" />
+                <circle cx="90" cy="84" r="22" fill="#ff8c3a" />
+                <circle cx="150" cy="84" r="22" fill="#5cc8ff" />
+                <circle cx="72" cy="118" r="22" fill="#e7537e" />
+                <circle cx="120" cy="112" r="24" fill="#f23838" />
+                <circle cx="168" cy="118" r="22" fill="#30c467" />
+                <circle cx="84" cy="150" r="22" fill="#7a5cff" />
+                <circle cx="120" cy="148" r="24" fill="#ffe34d" />
+                <circle cx="156" cy="150" r="22" fill="#f69ac7" />
+                <circle cx="120" cy="182" r="34" fill="#f6d0a8" />
+                <path d="M108 182c0-14 10-24 24-24s24 10 24 24-10 24-24 24-24-10-24-24Z" fill="#f2c591" />
+                <path d="M101 188c-5 16-4 30 3 42h32c7-12 8-26 3-42" fill="#f2c591" />
+                <path d="M99 178c6-10 14-16 21-16 8 0 16 6 22 16" fill="none" stroke="#dca56a" stroke-width="4" stroke-linecap="round" />
+                <path d="M85 135c-14 0-28 14-28 28 0 16 11 27 26 27 12 0 22-8 28-22 6 14 16 22 28 22 15 0 26-11 26-27 0-14-14-28-28-28-10 0-18 6-26 18-8-12-16-18-26-18Z" fill="none" stroke="#8f2878" stroke-width="2.5" opacity="0.25" />
+                <path d="M120 126c0 0-11-16-28-16-16 0-30 13-30 29 0 25 26 40 58 78 32-38 58-53 58-78 0-16-14-29-30-29-17 0-28 16-28 16Z" fill="#ff5656" opacity="0.18" />
+              </g>
+            </svg>
+            <div class="rare-wordmark">
+              <span class="name">RARE</span>
+              <span class="subname">DISORDERS SOCIETY</span>
+              <span class="location">SINGAPORE</span>
+            </div>
+          </div>
+        </div>
+        <div class="section-visual">
+          <img
+            class="qr"
+            src="RareDiseasesSociety_paynow_QR.png"
+            alt="PayNow QR code for Rare Disorders Society Singapore"
+          />
+        </div>
+        <div class="section-copy rare-copy">
+          <h2 id="rare-heading" class="lead">Beneficiary Name: Rare Disorders Society (Singapore)</h2>
+          <p>
+            For Tax Deduction for the donation, please key in your NRIC/FIN/UEN in the “UEN/Bill Reference No.”
+            field. | $50 and above donation will be eligible for tax exemption. E.g. NRIC start with S/T1234567E
+            &amp; FIN start with G/M1234567E | Bank Name: OCBC Bank | A/C Name: Rare Disorders Society (Singapore)
+            | A/C no: 611852831001 | Swift Code: OCBCSGSGXXX | Bank Code: 7339 | Bank Address: 65 Chulia Street
+            Floor 9 OCBC Centre Singapore 049513
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
